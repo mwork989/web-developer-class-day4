@@ -1,0 +1,61 @@
+
+/* tag selector for css
+denoted by html tag itself  */
+/* h1{
+    color:rgb(11, 7, 7);
+    background-color: rgb(245, 252, 127);
+} */
+
+
+/* class selector for css
+denoted by "." symbol */
+
+.class1{
+    color:rgb(11, 7, 7);
+    background-color: rgb(245, 252, 127);
+}
+/* tag selector for css
+denoted by "#" symbol */
+#id1{
+    color:rgb(47, 11, 11);
+    background-color: rgb(20, 116, 172);
+
+}
+
+
+/* universal selector  */
+
+/* *{
+    background-color: rgb(172, 224, 175);
+}
+
+body{
+    background-color: cornflowerblue;
+}
+ */
+
+/* combination selectors */
+
+div,p,li,.class2,#id2 {
+    background-color:rgb(232, 232, 194);
+}
+
+
+
+webdevelopement - html ,css m js
+
+
+
+
+client side
+--------------
+jquery -
+angular - 
+react  - 
+
+backend side
+------------
+nodejs platform
+
+
+

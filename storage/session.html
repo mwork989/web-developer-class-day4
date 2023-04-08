@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session storage</title>
+  </head>
+  <body>
+    <h2>How to store data in Session storage and retrieve</h2>
+
+    <section id="data-section"></section>
+    <p>No of times you have visited :<span id="count"></span></p>
+
+    <script>
+      if (typeof Storage) {
+        //store the data
+        sessionStorage.setItem("student", "harish");
+
+        if (sessionStorage.clickCount) {
+          sessionStorage.clickCount = Number(sessionStorage.clickCount) + 1;
+        } else {
+          sessionStorage.clickCount = 1;
+        }
+
+        // retriving the data from Session storage  and diplaying it
+        document.getElementById("data-section").innerHTML =
+          sessionStorage.getItem("student");
+        document.getElementById("count").innerHTML = sessionStorage.clickCount;
+      } else {
+        document.getElementById("data-section").innerHTML =
+          " no browser support";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local storage</title>
+  </head>
+  <body>
+    <h2>How to store data in local storage and retrieve</h2>
+
+    <section id="data-section"></section>
+
+    <script>
+      if (typeof Storage) {
+        //store the data
+        localStorage.setItem("student1", "atul");
+        // retriving the data from local storage  and diplaying it
+        document.getElementById("data-section").innerHTML =
+          localStorage.getItem("student1");
+      } else {
+        document.getElementById("data-section").innerHTML =
+          " no browser support";
+      }
+    </script>
+  </body>
+</html>
