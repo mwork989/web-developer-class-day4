@@ -1,0 +1,46 @@
+
+section{
+    border:1px solid grey;
+    border-radius: 5px;
+    padding:10px;
+    margin:10px;
+    width:250px;
+}
+
+
+section h2{
+    font-family:'Courier New', Courier, monospace;
+    color:blue;
+}
+
+.section3 > p:first-child{
+    font-family:'Courier New', Courier, monospace;
+    color:blue;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+   
+}
+
+.section3{
+    position: absolute;
+    top:200px;
+    left:300px;
+}
+
+
+#para1{
+  
+  border:1px solid red;
+}
+*{
+    margin-top:0px;
+}
+
+#para2{
+    border:1px dashed green;
+}
+
+#para3{
+    border: 1px dotted blue;
+}

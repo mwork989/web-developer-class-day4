@@ -1,0 +1,138 @@
+/* CSS selectors have  five categories:
+
+Simple selectors (select elements based on name, id, class, universal selector)
+Combinator selectors (select elements based on a specific relationship between them)
+Pseudo-class selectors (select elements based on a certain state)
+Pseudo-elements selectors (select and style a part of an element)
+Attribute selectors (select elements based on an attribute or attribute value) 
+
+reference https://developer.mozilla.org/en-US/docs/Web/CSS*/
+
+
+
+section{
+    border: 2px solid red;
+    padding-left:10px;
+    /* border-top-color:green;
+    border-bottom-color:rgb(185, 219, 31);
+    border-left-color:rgb(23, 67, 191);
+    border-right-color:rgb(128, 15, 0);
+    border-top-width: 2px;
+    border-top-style: groove; */
+}
+
+
+/* css combinators */
+
+/* descendant selector (white space) selects all <p> elements inside section element*/
+
+section p{
+    background-color:#dcd6d6;
+    
+}
+
+
+/* child selector  selects all elements that are the children of a specified element*/
+
+div > p{
+    background-color:#daf08f;
+}
+
+/* immediate adjacent sibling selector  */
+/* section + div{
+    border: 1px dashed green;
+} */
+
+/* general  sibling selector  */
+section ~  div{
+    border: 1px dashed green;
+}
+
+/* Pseudo-class selectors (select elements based on a certain state) */
+ul li a:hover{
+    background-color: black;
+    color: white;
+}
+
+table, tr,td,th{
+    border:1px solid black;
+}
+/* table tr:nth-child(odd){
+    background-color: rgb(207, 205, 205);
+}
+table tr:nth-child(2n){
+    background-color: rgb(207, 205, 205);
+}
+
+table tr:nth-child(2n+1){
+    background-color: rgb(207, 205, 205);
+} */
+
+table tr:nth-child(even){
+    background-color: rgb(207, 205, 205);
+}
+
+/* Pseudo-element selectors (selection based on style part of the element) */
+
+section p::first-letter{
+    color:brown;
+    font-size: 20px;
+}
+
+div p::first-line{
+   text-transform: uppercase;
+}
+
+/* Attribute  selectors */
+ul li a[title]{
+    color:green;
+}
+
+ul li a[title="test2"]{
+    color:rgb(9, 53, 9);
+}
+
+ul li a[title*="example"]{
+    color:rgb(105, 33, 169);
+}
+
+ul li a[title$=".org"]{
+    color:rgb(167, 15, 61);
+}
+
+ul li a[title~="org"]{
+    color:rgb(22, 77, 179);
+}
+
+table tr td[title]{
+    background-color: yellow;
+}
+
+/* ways to mention the color in css
+------------------------------------------
+1.  name of the color - always use this with caution as browser supoort needs to be tested 
+2. 6 digit alphanumeric  hex code -unique 6 digit alphanumeric identified by the browser community for a color followed by #  e.g. (RR,GG,BB) - #ff00cc   
+3. 3 digit hex value - (R G B )  - #f0c
+4. RGB value directly - intensity of the colors is between 0 and 255 
+    e.g rgb(255, 99, 71)
+5. HSL - Hue is a degree on the color wheel 0 to 360,saturation - how much % of the color value your want , lightnesss - how much light you want to add to your color
+e.g. hsl(0, 100%, 50%)
+
+6.HSLA  -hsla(hue, saturation, lightness, alpha)
+
+The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):
+
+7.  hwb  hue, whiteness, and blackness. (1.5708rad 20% 10% / 0.7);
+-------------------------------------------
+*/
+
+
+#section1{
+    border: 1px dotted blue;
+    outline: 5px dotted green;
+    margin:50px;
+}
+
+table{
+    width:100vw
+}
